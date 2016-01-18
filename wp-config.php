@@ -27,7 +27,7 @@ if (isset($_ENV['CLEARDB_DATABASE_URL'])) {
     define('DB_CHARSET',  'utf8');
     define('DB_COLLATE',  '');
 } else {
-    define('DB_NAME',     'yes_credit');
+    define('DB_NAME',     'yescredit_blog_development');
     define('DB_USER',     'root');
     define('DB_PASSWORD', '');
     define('DB_HOST',     '127.0.0.1');
