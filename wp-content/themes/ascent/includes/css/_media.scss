@@ -1,0 +1,183 @@
+@media only screen and (min-width:1440px) {
+	.site-banner{
+		height: 500px;
+
+		.left-grid {
+    		height: 500px;
+		}
+
+		.right-grid .top-grid {
+    		height: 250px;
+		}
+
+		.right-grid .bottom-left {
+		    height: 250px;
+		}
+	}
+}
+
+@media only screen and (min-width:1281px) {
+	.transform{ 
+		padding: 0 10% !important;
+		width: 100% !important;
+	}
+}
+
+@media only screen and (max-width:768px) {
+
+	.need {
+	    padding: 0 15px;
+	}
+
+	button#load-more {
+	    margin: 20px auto;
+	    outline: 0;
+	}
+
+	.site-banner{
+		height: auto !important;
+	}
+	.resize-col-left {
+	    width: 70%;
+	    padding: 0 20px !important;
+	}
+
+	.resize-col-right {
+	    width: 30%;
+	    padding: 0 20px !important;
+	}
+
+	.featured-blog span.counter{
+		display: none;
+	}
+
+	.sidebar-blog {
+	    width: 100%;
+	}
+
+	.home-label{
+		display: none;
+	}
+
+	.resize-col-left{
+		margin: 0 auto;
+	}
+
+	.resize-col-right{
+		width: 70%;
+	    margin: 0 auto;
+	}
+
+#masthead{
+	margin-bottom: 0 !important; 
+	border-bottom: solid 5px #97ca3f;
+}
+
+.site-header h1{
+	float: right; 
+}
+
+.mean-container a.meanmenu-reveal{
+	left: 0 !important;
+}
+
+.header-top{
+	min-height: 0 !important;
+}
+
+.mean-container .mean-bar .meanmenu-reveal{
+	background: #187bbb !important; 
+}
+
+.mean-container a.meanmenu-reveal span {
+    height: 5px;
+    width: 35px;
+    border-radius: 5px;
+}
+
+.mean-container .mean-bar{
+	position: fixed;
+}
+
+div#logo img {
+    position: relative;
+    top: 0;
+    height: 50px;
+}
+
+.fa-remove:before, .fa-close:before, .fa-times:before {
+    font-size: 30px;
+}
+
+.site-navigation {
+    width: 100%;
+    float: left !important;
+    position: absolute;
+}
+
+}
+
+
+@media only screen and (max-width:540px) {
+	.resize-col-left {
+	    width: 80%;
+	}  
+
+	.resize-col-right {
+    	width: 80%;
+	}
+}
+
+@media only screen and (max-width:480px) {
+	.resize-col-left {
+	    width: 90%;
+	}    
+
+	.resize-col-right {
+    	width: 90%;
+	}
+
+	div#first-grid .headline {
+    	line-height: 30px;
+	}
+
+	.headline-home.headline {
+	    font-size: 30px;
+
+	}
+
+	.desc-left {
+	    padding: 0 !important;
+	    margin: 0 !important;
+	    width: 0 !important;
+	}
+
+	.desc-right {
+	    width: 100%;
+	    margin: 0;
+	    
+	    .holder{
+	    	left: 5%;
+    		right: 5%;
+	    }
+	}
+
+}
+
+@media only screen and (max-width:320px) {
+	#first-grid .grid-holder{
+		padding: 0 20px 30px 20px;
+	}
+
+	.resize-col-left {
+	    width: 100%;
+	}    
+
+	.resize-col-right {
+    	width: 100%;
+	}
+
+	.featured-image {
+	    height: 220px !important;
+	}
+}
