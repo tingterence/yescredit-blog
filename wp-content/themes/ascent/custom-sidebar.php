@@ -27,7 +27,7 @@
             <h4 class="text-uppercase widget-title">Most Recent</h4>
 
             <?php
-            $posts = query_posts( array('post_type' => 'post', 'order' => 'DESC', 'category_name' => 'Featured', 'showposts' => 6) );
+            $posts = query_posts( array('post_type' => 'post', 'order' => 'DESC', 'showposts' => 6) );
             $link = get_post_permalink($posts[0]->ID); 
             $counter = 1;
                 foreach($posts as $p){
