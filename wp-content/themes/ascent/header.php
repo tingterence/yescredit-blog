@@ -88,7 +88,7 @@
     <meta name="twitter:domain" content="yescredit.launchpad.skyrocket.ph"> 
 
     <?php if ($my_excerpt) : ?>
-        <meta name="description" content="<?php echo $my_excerpt;?>." />
+        
     <?php else: ?>
         <meta name="description" content="<?php bloginfo('description');?>">
     <?php endif; ?> 
@@ -100,6 +100,17 @@
     <![endif]-->
     <?php wp_head(); ?>
 </head>
+
+<?php if (is_single()): ?>
+    <style>
+        .addthis-smartlayers, div#at4-follow, div#at4-share, div#at4-thankyou, div#at4-whatsnext {
+            padding: 0;
+            margin: 0;
+            display: none !important;
+        }
+    </style>
+<?php endif; ?>
+
 
 <body <?php body_class("h100"); ?>>
   <?php do_action('before'); ?>
@@ -127,12 +138,12 @@
                                 <div class="site-branding">
                                     <h1 class="site-title">
                                         <a href="<?php echo esc_url(home_url('/')); ?>" title="<?php echo esc_attr(get_bloginfo('name', 'display')); ?>" rel="home">
-                        				    <?php if (of_get_option('logo')): ?>
-        					                   <img src="<?php echo of_get_option('logo'); ?>" alt="<?php bloginfo('name'); ?>">
-                        				    <?php else: ?>
-        					                   <a href="<?php bloginfo('url');?>"><img src="<?php bloginfo('template_url');?>/includes/images/YesCredit_Logo.jpg" alt="Site Logo"></a>
-                        				    <?php endif; ?>
-                    				    </a>
+                                            <?php if (of_get_option('logo')): ?>
+                                               <img src="<?php echo of_get_option('logo'); ?>" alt="<?php bloginfo('name'); ?>">
+                                            <?php else: ?>
+                                               <a href="<?php bloginfo('url');?>"><img src="<?php bloginfo('template_url');?>/includes/images/YesCredit_Logo.jpg" alt="Site Logo"></a>
+                                            <?php endif; ?>
+                                        </a>
                                     </h1>
                                 </div>
                             </div>
@@ -144,16 +155,16 @@
                             <div id="header-search-button"><i class="fa fa-search"></i></div>
                         </div>
                         <div class="site-navigation pull-right">
-            			    <nav class="main-menu">
-            				<?php
+                            <nav class="main-menu">
+                            <?php
                             wp_nav_menu(array(
                                 'theme_location' => 'main-menu',
                                 'container' => false,
                                 'menu_class' => 'header-nav clearfix',
                             ));
                             ?>
-            			    </nav>
-    	                    <div id="responsive-menu-container"></div>
+                            </nav>
+                            <div id="responsive-menu-container"></div>
                         </div><!-- .site-navigation -->
                     </div><!--.col-sm-9-->
                 </div><!--.row-->
@@ -169,7 +180,7 @@
     
 <div class="site-banner" style="height: 255px;">
     <div class="col-sm-12 col-md-12 right-grid clear-padding">
-        <?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('banner')) ?>
+        <div class="inner-grid" style="background: url(<?php bloginfo('template_url');?>/includes/images/grid-image2.jpg)no-repeat 100%/cover;">
             <div class="container transform relative h100">
               <div class="row h100">
                   <div class="col-xs-6 col-md-6 h100 desc-left">

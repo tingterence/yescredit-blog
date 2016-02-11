@@ -25,6 +25,11 @@
 
 @media only screen and (max-width:768px) {
 
+	.header-grid:hover .mask {
+	    visibility: hidden; 
+	    opacity: 0;
+	}
+
 	.need {
 	    padding: 0 15px;
 	}
