@@ -180,7 +180,7 @@
     
 <div class="site-banner" style="height: 255px;">
     <div class="col-sm-12 col-md-12 right-grid clear-padding">
-        <div class="inner-grid" style="background: url(<?php bloginfo('template_url');?>/includes/images/grid-image2.jpg)no-repeat 100%/cover;">
+        <?php if(!function_exists('dynamic_sidebar') || !dynamic_sidebar('banner')) ?>
             <div class="container transform relative h100">
               <div class="row h100">
                   <div class="col-xs-6 col-md-6 h100 desc-left">
