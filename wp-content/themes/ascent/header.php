@@ -108,14 +108,6 @@
             margin: 0;
             display: none !important;
         }
-
-        @media only screen and (max-width:768px) {
-
-        .header-grid:hover .mask {
-            visibility: hidden !important; 
-            opacity: 0 !important;
-        }
-
     </style>
 <?php endif; ?>
 

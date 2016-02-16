@@ -517,6 +517,10 @@ p iframe {
     padding: 0 10% !important;
     width: 100% !important; } }
 @media only screen and (max-width: 768px) {
+  .header-grid:hover .mask {
+    visibility: hidden !important;
+    opacity: 0 !important; }
+
   .need {
     padding: 0 15px; }
 
